@@ -1,0 +1,12 @@
+{
+  "name": "api-ticket",
+  "version": "1.0.0",
+  "description": "api de tickets de pedidos",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --watch ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Samuel Colaço",
+  "license": "ISC"
+}
