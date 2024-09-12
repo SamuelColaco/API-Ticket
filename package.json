@@ -1,10 +1,11 @@
 {
   "name": "api-ticket",
   "version": "1.0.0",
-  "description": "api de tickets de pedidos",
-  "main": "index.js",
+  "description": "api de gerenciamento de tickets",
+  "main": ".src/server.js",
+  "type": "module",
   "scripts": {
-    "test": "node --watch ./src/server.js"
+    "dev": "node --watch ./src/server.js"
   },
   "keywords": [],
   "author": "Samuel Colaço",
