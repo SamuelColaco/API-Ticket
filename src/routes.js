@@ -12,6 +12,7 @@ export const routes = [
         method: "POST",
         path: "/tickets",
         controller({ req, res }){
+            res.writeHead(201).end(JSON.stringify(req.body))
         }
     },
 
