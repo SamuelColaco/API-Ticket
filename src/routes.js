@@ -1,5 +1,6 @@
 import { create } from "./controller/tickets/create.js";
 import { index } from "./controller/tickets/index.js";
+import { routeParams } from "./utils/routeParams.js";
 
 export const routes = [
     {
@@ -35,4 +36,7 @@ export const routes = [
         controller({ req, res }){
         }
     }
-]
+].map((route) => ({
+    ...route,
+    path: routeParams(route.path)
+}))

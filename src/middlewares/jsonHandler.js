@@ -9,7 +9,7 @@ export async function jsonHandler({ req, res}) {
     }
 
     try {
-        req.body = JSON.parse(Buffer.concat(buffers).toString())
+          req.body =  JSON.parse(Buffer.concat(buffers).toString())
 
     } catch (error) {
         console.log(error)
