@@ -10,7 +10,7 @@ export function create({req, res, database}){
         equipment,
         description,
         user_name,
-        status: "open",
+        status: "closed",
         created_at: new Date().toString(),
         updated_at: new Date().toString()
     }

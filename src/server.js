@@ -3,7 +3,7 @@
 import http from "http"
 
 import { jsonHandler } from "./middlewares/jsonHandler.js"
-import { routeHandler } from "./middlewares/routehandler.js"
+import { routeHandler } from "./middlewares/routeHandler.js"
 
 const server = http.createServer( async (req, res)=>{
 
