@@ -16,6 +16,5 @@ export async function jsonHandler({ req, res}) {
         req.body = null  
     }
 
-    res.setHeader("Content-Type", "application/json")
-
+    res.setHeader("Content-Type", "application/json")   
 }

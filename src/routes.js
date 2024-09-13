@@ -1,3 +1,4 @@
+import { create } from "./controller/tickets/create.js";
 
 
 export const routes = [
@@ -11,9 +12,7 @@ export const routes = [
     {
         method: "POST",
         path: "/tickets",
-        controller({ req, res }){
-            res.writeHead(201).end(JSON.stringify(req.body))
-        }
+        controller: create,
     },
 
     {
@@ -23,6 +22,7 @@ export const routes = [
         }
     },
 
+    
     {
         method: "PATCH",
         path: "/tickets/:id/status",

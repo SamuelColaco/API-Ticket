@@ -1,7 +1,7 @@
 
 import { routes } from "../routes.js"
 
-export async function routeHandler({ req, res}) {
+export function routeHandler({ req, res}) {
 
     
     const route = routes.find((route) => {
@@ -9,10 +9,9 @@ export async function routeHandler({ req, res}) {
     })
 
     if(route){
-        route.controller({req, res})
+        return route.controller({req, res})
     }
 
     return res.writeHead(404).end("Não foi possivel achar a rota")
-
     
 }
