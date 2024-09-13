@@ -5,7 +5,7 @@ export const routes = [
     {
         method: "GET",
         path: "/tickets",
-        controller({ req, res }){
+        controller({ req, res, database }){
         }
     },
 

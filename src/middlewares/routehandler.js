@@ -1,5 +1,8 @@
 
 import { routes } from "../routes.js"
+import { Database } from "../database/db.js"
+
+const database = new Database()
 
 export function routeHandler({ req, res}) {
 
@@ -9,7 +12,7 @@ export function routeHandler({ req, res}) {
     })
 
     if(route){
-        return route.controller({req, res})
+        return route.controller({req, res, database})
     }
 
     return res.writeHead(404).end("Não foi possivel achar a rota")
