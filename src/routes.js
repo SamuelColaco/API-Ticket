@@ -1,6 +1,7 @@
 import { create } from "./controller/tickets/create.js";
 import { index } from "./controller/tickets/index.js";
 import { update } from "./controller/tickets/update.js";
+import { updateStatus } from "./controller/tickets/updateStatus.js";
 import { routeParams } from "./utils/routeParams.js";
 
 export const routes = [
@@ -25,9 +26,8 @@ export const routes = [
     
     {
         method: "PATCH",
-        path: "/tickets/:id/status",
-        controller({ req, res }){
-        }
+        path: "/tickets/:id/close",
+        controller: updateStatus,
     },
 
     {
