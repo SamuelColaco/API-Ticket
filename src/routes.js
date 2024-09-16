@@ -1,5 +1,6 @@
 import { create } from "./controller/tickets/create.js";
 import { index } from "./controller/tickets/index.js";
+import { update } from "./controller/tickets/update.js";
 import { routeParams } from "./utils/routeParams.js";
 
 export const routes = [
@@ -18,8 +19,7 @@ export const routes = [
     {
         method: "PUT",
         path: "/tickets/:id",
-        controller({ req, res }){
-        }
+        controller: update,
     },
 
     
